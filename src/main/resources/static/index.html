@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Hello WebSocket(Hello Eldor)</title>
     <link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -28,8 +28,18 @@
         <div class="col-md-6">
             <form class="form-inline">
                 <div class="form-group">
-                    <label for="message">Send message</label>
+                    <label for="message">Enter your message</label>
                     <input type="text" id="message" class="form-control" placeholder="Message here...">
+                </div>
+                </br    >
+                <div class="form-group">
+                    <label for="message">Select receiver:</label>
+                    <select name="users" id="users">
+                        <option value="diogo">Diogo</option>
+                        <option value="albert">Albert</option>
+                        <option value="chris">Chris</option>
+                        <option value="chris">Aaron</option>
+                    </select>
                 </div>
                 <button id="send" class="btn btn-default" type="submit">Send</button>
             </form>
